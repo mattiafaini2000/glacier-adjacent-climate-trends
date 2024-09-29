@@ -1,0 +1,20 @@
+analysis_config <- list(
+  region = "high_mountain_asia", start_year = 1994L, end_year = 2023L,
+  index_start_year = 1960L, availability = 0.65, significance = 0.10,
+  temperature_multiplier = 2.5, rainy_day_threshold = 2,
+  precipitation_normalization = "mean",
+  station_list = "high_mountain_asia/list.txt", station_list_separator = ",",
+  station_directory = "high_mountain_asia/stations",
+  output_directory = "outputs/high_mountain_asia",
+  index_correlation_variables = c("tmax", "tmin"),
+  rainy_day_correlation_variables = c("tmax", "tmin", "tmean"),
+  indices = list(
+    nino = list(file = "high_mountain_asia/indices/nino.txt", separator = ",", seasonal_p_value_digits = 2L),
+    ao = list(file = "high_mountain_asia/indices/ao.txt", separator = ",", seasonal_p_value_digits = 2L),
+    eur = list(file = "high_mountain_asia/indices/eur.txt", separator = ",", seasonal_p_value_digits = 2L),
+    amo = list(file = "high_mountain_asia/indices/amo.txt", separator = ",", seasonal_p_value_digits = 2L),
+    pdo = list(file = "high_mountain_asia/indices/pdo.txt", separator = ",", seasonal_p_value_digits = 2L),
+    ipo = list(file = "high_mountain_asia/indices/ipo.txt", separator = ",", seasonal_p_value_digits = 2L),
+    iod = list(file = "high_mountain_asia/indices/iod.txt", separator = ",", seasonal_p_value_digits = 2L),
+    nao = list(file = "high_mountain_asia/indices/norm.nao.monthly.b5001.current.ascii.table.txt",
+               separator = "", seasonal_p_value_digits = NA_integer_)))

@@ -1,0 +1,7 @@
+package,scope,used_by,notes
+wql,core,station trends; hourly trends; ERA5 statistics,Uses mannKen; no package version validated
+dplyr,core for hourly,hourly grouping and maximum-minute ties,Retains top_n selection semantics
+terra,optional ERA5,serial raster analyses,Keeps the supplied terra implementation; loads full raster array
+ggplot2,optional plotting,make_figures,Required only for rendering
+stats,R bundled,temperature filtering; Pearson correlations; plot summaries,Included with R
+utils,R bundled,station and index readers; hourly and figure readers; CSV output,Included with R
